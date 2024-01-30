@@ -519,12 +519,35 @@ body.dark-theme {
 }
 
 .popular__price {
-  font-size: var(--h1-font-size);
+  /* font-size: var(--h1-font-size); */
 }
 
-.popular__price span {
+.popular__price span .price_sign {
   color: var(--first-color-alt);
 }
+
+.popular__price a {
+  color:red;
+  font-weight:bold;
+  font-size:12px;
+  text-decoration: line-through;
+}
+
+
+.popular__price p .price_before{
+  font-size:18px;
+}
+
+.popular__starts .ri-star-half-line{
+  font-size:10px;
+
+}
+
+.popular__starts .ri-star-fill {
+  font-size:10px;
+
+}
+
 
 .popular__button {
   display: inline-flex;
@@ -843,11 +866,36 @@ body.dark-theme {
 }
 
 .products__price {
-  font-size: var(--h1-font-size);
+  /* font-size: var(--h1-font-size); */
 }
 
 .products__price span {
   color: var(--first-color-alt);
+  font-size:18px;
+}
+
+
+.products__price a {
+  color:red;
+  text-decoration: line-through;
+  font-size:12px;
+}
+
+
+.products__starts .ri-star-half-line{
+  font-size:10px;
+
+}
+
+.products__starts .ri-star-fill {
+  font-size:10px;
+
+}
+
+
+.products__price p {
+  color:;
+  font-size:18px;
 }
 
 .products__button {
@@ -1389,7 +1437,7 @@ body.dark-theme {
   .popular__card,
   .products__card {
     width: 230px;
-    height: 410px;
+    height: 450px;
     padding: 1rem 1rem 1.5rem;
   }
 
