@@ -170,3 +170,15 @@ sr.reveal(`.home__content, .popular__container, .products__container, .join__bg,
 sr.reveal(`.home__image`, { origin: 'bottom' })
 sr.reveal(`.choose__image, .features__image`, { origin: 'left' })
 sr.reveal(`.choose__content, .features__content`, { origin: 'right' })
+
+
+
+// Photo Profile=======================================
+
+let profile = document.querySelector('.profile');
+let menu = document.querySelector('.menu');
+
+profile.onclick = function() {
+    menu.classList.toggle('active');
+}
+// End Photo Profile=======================================
