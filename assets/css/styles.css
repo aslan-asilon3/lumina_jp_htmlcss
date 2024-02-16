@@ -526,11 +526,15 @@ body.dark-theme {
   color: var(--first-color-alt);
 }
 
-.popular__price a {
+.popular__price .price_ {
   color:red;
   font-weight:bold;
   font-size:12px;
   text-decoration: line-through;
+}
+
+.popular__price .ri-eye-line {
+  color:white !important;
 }
 
 
@@ -875,10 +879,16 @@ body.dark-theme {
 }
 
 
-.products__price a {
+.products__price .price_ {
   color:red;
   text-decoration: line-through;
   font-size:12px;
+}
+
+
+
+.products__price .ri-eye-line {
+  color:white !important;
 }
 
 
