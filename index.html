@@ -1046,14 +1046,6 @@
     document.addEventListener("DOMContentLoaded", function() {
       var languageSelector = document.getElementById('languageSelector');
 
-      // Retrieve the selected language from localStorage
-      var selectedLanguage = localStorage.getItem('selectedLanguage');
-
-      // If a language is saved in localStorage, set it as the selected option
-      if (selectedLanguage) {
-        languageSelector.value = selectedLanguage;
-      }
-
       // Add an event listener to handle changes in the selected option
       languageSelector.addEventListener('change', function() {
         var selectedOption = this.options[this.selectedIndex];
@@ -1062,8 +1054,6 @@
           window.location.href = url;
         }
 
-        // Save the selected language to localStorage
-        localStorage.setItem('selectedLanguage', this.value);
       });
     });
   </script>
