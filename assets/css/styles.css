@@ -424,7 +424,7 @@ body.dark-theme {
 
 .home__title {
   color: var(--white-color);
-  font-size: var(--bigger-font-size);
+  font-size: 3.5rem;
   font-weight: var(--font-medium);
   margin-bottom: 1.5rem;
 }
@@ -1227,7 +1227,7 @@ body.dark-theme {
   }
 
   .home__title {
-    font-size: 1.75rem;
+    /* font-size: 1.10rem; */
   }
 
   .features__info {
@@ -1459,7 +1459,7 @@ body.dark-theme {
   }
 
   .home__title {
-    margin-bottom: 2.5rem;
+    /* margin-bottom: 2.5rem; */
   }
 
   .home__buttons {
