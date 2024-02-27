@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
 
 
-   <title>Lumina Shop</title>
+   <title>るみな しょっぷ</title>
 
 <style>
 
@@ -45,43 +45,41 @@
 
          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
          <li class="nav__item_lang" >
-            <span>indonesia</span>
+            <span>Japanese</span>
          </li>
 
 
       </section>
       <nav class="nav container">
          <a href="#" class="nav__logo">
-            Lumina
+            るみな
          </a>
 
-         <div class="" id="nav-menu">
+         <div class="nav__menu" id="nav-menu">
             <ul class="nav__list">
                <li class="nav__item">
                   <a href="#home" class="nav__link active-link">Home</a>
                </li>
 
                <li class="nav__item">
-                  <a href="#popular" class="nav__link">Popular</a>
+                  <a href="#popular" class="nav__link">にんき</a>
                </li>
 
                <li class="nav__item">
-                  <a href="#choose" class="nav__link">Choose</a>
+                  <a href="#choose" class="nav__link">えらぶ</a>
                </li>
 
                <li class="nav__item">
-                  <a href="#products" class="nav__link">Products</a>
+                  <a href="#products" class="nav__link">せいひん</a>
                </li>
 
                <li class="nav__item">
-                  <a href="product_more.html" class="nav__link">Product Search</a>
+                  <a href="product_more.html" class="nav__link">ぷろだくとさーち</a>
                </li>
 
-
-               <div class="nav__item d-flex align-items-center" id="cart-nav-item" style="display:flex;">
-                          Cart 
-                        <span class=" nav__item" id="cart-count">0</span>  
-               </div>
+               <li class="nav__item">
+                  <a href="product_more.html" class="nav__link">かーと 0</a>
+               </li>
 
 
             </ul>
@@ -92,16 +90,7 @@
             </div>
          </div>
 
-         <div class="nav__buttons">
-            <!-- Theme change button -->
-            <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-            <!-- Toggle button -->
-            <div class="nav__toggle" id="nav-toggle">
-               <i class="ri-menu-line"></i>
-            </div>
-
-         </div>
 
 
       <!--
@@ -124,28 +113,36 @@
          </li>
           -->
 
+
+         <div class="nav__buttons ">
+            <!-- Theme change button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+
+            <li class="nav__item after_login nav__link" id="nav-profile" >
+               <div class="profile">
+                     <div class="user">
+                        <h3 id="dropdown-profile-name"> <span id="dropdown-profile-name"></span> </h3>
+                     </div>
+                     <div class="img-box show-menu ">
+                        <img src="assets/img/anonymous.png" alt="user image">
+                     </div>
+               </div>
+               <div class="menu">
+                     <ul>
+                        <li><a href="auth-page/index.html"><i class="ph-bold ph-user"></i>&nbsp;ログイン</a></li>
+                        <li><a href="auth-page/register.html"><i class="ph-bold ph-user"></i>&nbsp;れじすたー</a></li>
+                     </ul>
+               </div>
+            </li>
+         </div>
+         
       
       
-         <li class="nav__item after_login" >
-            <div class="profile">
-                  <div class="user">
-                     <h3 id="dropdown-profile-name"> <span id="dropdown-profile-name"></span> </h3>
-                     <p class="" >@aslan</p>
-                  </div>
-                  <div class="img-box">
-                     <img src="assets/img/man4.png" alt="some user image">
-                  </div>
-            </div>
-            <div class="menu">
-                  <ul>
-                     <li><a href="#"><i class="ph-bold ph-user"></i>&nbsp;Profile</a></li>
-                     <li><a href="#"><i class="ph-bold ph-envelope-simple"></i>&nbsp;Inbox</a></li>
-                     <li><a href="#"><i class="ph-bold ph-gear-six"></i>&nbsp;Settings</a></li>
-                     <li><a href="#"><i class="ph-bold ph-question"></i>&nbsp;Help</a></li>
-                     <li><a href="#"><i class="ph-bold ph-sign-out"></i>&nbsp;Sign Out</a></li>
-                  </ul>
-            </div>
-         </li>
 
 
       </nav>
@@ -161,12 +158,12 @@
             <div class="home__content grid">
                <div class="home__data">
                   <h3 class="home__subtitle">
-                     The best light bulbs
+                     さいこうのでんきゅう
                   </h3>
 
                   <h1 class="home__title">
-                     Unique Light <br>
-                     For You Home
+                     ユニーク ライト <br>
+                     あなたの家に
                   </h1>
 
                   <div class="home__buttons">
@@ -245,8 +242,8 @@
 
                      <h3 class="popular__name">Modern Light</h3>
                      <span class="popular__subtitle">Hanging Light</span>
-                     <h3 class="popular__price">
-                        <a class="price_">2.140</a> 
+                     <h4 class="popular__price">
+                        <a class="price_">$ 2.140</a> 
                         <p class="price_before"><span class="price_sign">$</span> 900</p>
                         <p class="popular__icons">
                            <i class="ri-bookmark-line"></i>
@@ -262,7 +259,7 @@
                            <i class="ri-star-fill"></i>
                            <i class="ri-star-half-line"></i>
                         </p>
-                     </h3>
+                     </h4>
 
                      <button class="popular__button">
                         <i class="ri-shopping-cart-2-line"></i>
@@ -276,8 +273,8 @@
 
                      <h3 class="popular__name">Industrial Light</h3>
                      <span class="popular__subtitle">Hanging Light</span>
-                     <h3 class="popular__price">
-                        <a class="price_">2</a> 
+                     <h4 class="popular__price">
+                        <a class="price_">$ 2</a> 
                         <p><span class="price_sign">$</span> 900</p>
                         <p class="popular__icons">
                            <i class="ri-bookmark-line"></i>
@@ -293,7 +290,7 @@
                            <i class="ri-star-fill"></i>
                            <i class="ri-star-half-line"></i>
                         </p>
-                     </h3>
+                     </h4>
 
                      <button class="popular__button">
                         <i class="ri-shopping-cart-2-line"></i>
@@ -307,8 +304,8 @@
 
                      <h3 class="popular__name">Superbolw Light</h3>
                      <span class="popular__subtitle">Hanging Light</span>
-                     <h3 class="popular__price">
-                        <a class="price_">1.080</a> 
+                     <h4 class="popular__price">
+                        <a class="price_">$ 1.080</a> 
                         <p><span class="price_sign">$</span> 900</p>
                         <p class="popular__icons">
                            <i class="ri-bookmark-line"></i>
@@ -324,7 +321,7 @@
                            <i class="ri-star-fill"></i>
                            <i class="ri-star-half-line"></i>
                         </p>
-                     </h3>
+                     </h4>
 
                      <button class="popular__button">
                         <i class="ri-shopping-cart-2-line"></i>
@@ -338,8 +335,8 @@
 
                      <h3 class="popular__name">Ultrawide Light</h3>
                      <span class="popular__subtitle">Hanging Light</span>
-                     <h3 class="popular__price">
-                        <a class="price_">160</a> 
+                     <h4 class="popular__price">
+                        <a class="price_">$ 160</a> 
                         <p><span class="price_sign">$</span> 900</p>
 
                         <p class="popular__icons">
@@ -356,7 +353,7 @@
                            <i class="ri-star-fill"></i>
                            <i class="ri-star-half-line"></i>
                         </p>
-                     </h3>
+                     </h4>
 
                      <button class="popular__button">
                         <i class="ri-shopping-cart-2-line"></i>
@@ -370,8 +367,8 @@
 
                      <h3 class="popular__name">Roundness Light</h3>
                      <span class="popular__subtitle">Hanging Light</span>
-                     <h3 class="popular__price">
-                        <a class="price_">170</a> 
+                     <h4 class="popular__price">
+                        <a class="price_">$ 170</a> 
                         <p><span class="price_sign">$</span> 900</p>
                         <p class="popular__icons">
                            <i class="ri-bookmark-line"></i>
@@ -388,7 +385,7 @@
                            <i class="ri-star-half-line"></i>
                         </p>
 
-                     </h3>
+                     </h4>
 
                      <button class="popular__button">
                         <i class="ri-shopping-cart-2-line"></i>
@@ -577,7 +574,7 @@
                   <h3 class="products__name">Modern Light</h3>
                   <span class="products__subtitle">Hanging Light</span>
                   <h3 class="products__price">
-                     <a class="price_">140</a> 
+                     <a class="price_">$ 140</a> 
                      <p><span class="price_sign">$</span> 900</p>
                      <p class="products__icons">
                         <i class="ri-bookmark-line"></i>
@@ -608,7 +605,7 @@
                   <h3 class="products__name">Industrial Light</h3>
                   <span class="products__subtitle">Hanging Light</span>
                   <h3 class="products__price">
-                     <a class="price_">200</a> 
+                     <a class="price_">$ 200</a> 
                      <p><span class="price_sign">$</span> 900</p>
                      <p class="products__icons">
                         <i class="ri-bookmark-line"></i>
@@ -639,7 +636,7 @@
                   <h3 class="products__name">Superbolw Light</h3>
                   <span class="products__subtitle">Hanging Light</span>
                   <h3 class="products__price">
-                     <a class="price_">180</a> 
+                     <a class="price_">$ 180</a> 
                      <p><span class="price_sign">$</span> 900</p>
                      <p class="products__icons">
                         <i class="ri-bookmark-line"></i>
@@ -670,7 +667,7 @@
                   <h3 class="products__name">Ultrawide Light</h3>
                   <span class="products__subtitle">Hanging Light</span>
                   <h3 class="products__price">
-                     <a class="price_">160</a> 
+                     <a class="price_">$ 160</a> 
                      <p><span class="price_sign">$</span> 900</p>
                   </h3>
 
@@ -687,7 +684,7 @@
                   <h3 class="products__name">Roundness Light</h3>
                   <span class="products__subtitle">Hanging Light</span>
                   <h3 class="products__price">
-                     <a class="price_">170</a> 
+                     <a class="price_">$ 170</a> 
                      <p><span class="price_sign">$</span> 900</p>
                      <p class="products__icons">
                         <i class="ri-bookmark-line"></i>
@@ -718,7 +715,7 @@
                   <h3 class="products__name">Stickness Light</h3>
                   <span class="products__subtitle">Hanging Light</span>
                   <h3 class="products__price">
-                     <a class="price_">280</a> 
+                     <a class="price_">$ 280</a> 
                      <p><span class="price_sign">$</span> 900</p>
                      <p class="products__icons">
                         <i class="ri-bookmark-line"></i>
@@ -749,7 +746,7 @@
                   <h3 class="products__name">Superjet Light</h3>
                   <span class="products__subtitle">Hanging Light</span>
                   <h3 class="products__price">
-                     <a class="price_">150</a> 
+                     <a class="price_">$ 150</a> 
                      <p><span class="price_sign">$</span> 900</p>
                      <p class="products__icons">
                         <i class="ri-bookmark-line"></i>
@@ -780,7 +777,7 @@
                   <h3 class="products__name">Nakedness Light</h3>
                   <span class="products__subtitle">Hanging Light</span>
                   <h3 class="products__price">
-                     <a class="price_">100</a> 
+                     <a class="price_">$ 100</a> 
                      <p><span class="price_sign">$</span> 900</p>
                      <p class="products__icons">
                         <i class="ri-bookmark-line"></i>
@@ -896,7 +893,7 @@
 
                   <ul class="footer__links">
                      <li>
-                        <a href="#" class="footer__link">Why Sunlight</a>
+                        <a href="#" class="footer__link">Why Lumina</a>
                      </li>
 
                      <li>
